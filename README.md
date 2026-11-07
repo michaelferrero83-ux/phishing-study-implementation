@@ -1,5 +1,7 @@
 # Phishing research: browser traffic and website signals
 
+Current repository: **[michaelferrero83-ux/phishing-study-implementation](https://github.com/michaelferrero83-ux/phishing-study-implementation)**. This is a separate repository with the original project history. Use this repository for new clones, issues and pull requests. References to Lawrken in imported documents and frozen assignment owners retain their original identities.
+
 This project visits frozen PhiUSIIL dataset endpoints inside a disposable Ubuntu VM, records browser traffic and website measurements, and preserves both successful captures and failed visits. Chromium renders the page; Playwright controls it and records request/response events. Python also measures DNS and input-origin certificate metadata.
 
 **Start with [the two-laptop assignment plan](docs/TWO_LAPTOP_PLAN.md) and [the AI handoff](docs/AI_DATASET_HANDOFF.md).** The full dataset assignments are prepared, but the current operator does not ingest them yet. Its existing Run command still selects the original shared 400-record reserve. Do not use it on both laptops expecting the new assignments to apply.
@@ -13,7 +15,7 @@ The source repository is public. Obtain the frozen `study-inputs-v1.zip` private
 In PowerShell:
 
 ```powershell
-git clone https://github.com/Lawrken/phishing-study-implementation.git
+git clone https://github.com/michaelferrero83-ux/phishing-study-implementation.git
 cd phishing-study-implementation
 .\host-tools\ResearchOperator.ps1 -Mode Inspect
 .\host-tools\SetupResearch.ps1 -Region 'YOUR ACTUAL CITY, COUNTRY' -InputsArchive 'PATH\study-inputs-v1.zip'
